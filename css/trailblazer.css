@@ -10,15 +10,21 @@
 * in skeleton.css, but that may change.
 */
 
-/* Colour Scheme */
+/* Base Colours
+---------------------------------------------*/ 
 
 body {
     background-color: #FFFAF3;
     color: #A1A09F;
 }
 
+a {
+  color: red; }
+a:hover {
+  color: maroon; }
 
-/* Typography Base */
+/* Typographic Overrides
+---------------------------------------------*/ 
 body { 
     /* Gotham SS is set in skeleton.css*/
 }
@@ -34,7 +40,40 @@ h1 {
     letter-spacing: -0.15em;
 }
 
-/* Sections */
+
+/* Navigation
+---------------------------------------------*/ 
+
+.nav-list li {
+    display: inline-block;
+}
+
+.nav-list.main-nav {
+    float: right;
+}
+
+.nav-list a {
+    font-size: 11px;
+    letter-spacing: .1rem;
+    text-decoration: none;
+    color: #333;
+    margin-left: 4em;
+}
+
+/* Header
+---------------------------------------------*/ 
+.logo {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+header {
+    margin-top: 3rem;
+}
+
+/* Sections (Placeholder)
+---------------------------------------------*/ 
 .cta {
     border: 2px solid;
 }
@@ -44,9 +83,10 @@ h1 {
 }
 
 
+/* CTA Form 
+---------------------------------------------*/ 
 
-/* CTA Form */ 
-
+/* CTA Form Layout */
 @media (min-width: 550px) {
     .cta input[type="email"] {
         height: 76px;
@@ -76,3 +116,9 @@ h1 {
     }
 }
 
+/* CTA Form Styling */
+.cta .button-primary {
+    font-family: 'Verlag A', 'Verlag B'; 
+    text-transform: none;
+    font-size: 1.4em; /*Compensates for Gotham's higher x-height*/
+}
