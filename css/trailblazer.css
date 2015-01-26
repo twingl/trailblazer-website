@@ -46,6 +46,17 @@ Treat this as a refactoring pen for quickly blocking stuff out in code.
     margin-top: 2em;
 }
 
+div .problem-browser {
+    padding-top: 12rem;
+}
+
+footer h4 {
+    /*Decide what this is semantically later: right now, we just want a stlye*/
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+}
+
 /* Typographic Overrides
 ---------------------------------------------*/ 
 body { 
@@ -53,13 +64,11 @@ body {
 }
 
 
-.bold-statement, .lead-statement { 
+.bold-statement, .lead-statement, .ambitious-statement{ 
     font-family: 'Verlag A', 'Verlag B'; 
     font-weight: 400; 
     font-style: normal;
     text-rendering: optimizeLegibility;
-    
-    text-align: center;
     
     margin-left: auto;
     margin-right: auto;
@@ -68,6 +77,7 @@ body {
 .bold-statement {
     font-size: 3.2rem;
     line-height: 1.2;
+    text-align: center;
     /*letter-spacing: -.1rem;*/
     max-width: 14em;
 }
@@ -76,6 +86,13 @@ body {
     line-height: 1.35;
     letter-spacing: .1rem;
     max-width: 32em;
+}
+
+.ambitious-statement {
+    font-size: 3.8rem;
+    line-height: 1.2;
+    color: #FFFAF3;
+    max-width: 18em;
 }
 
 @media (min-width: 550px) {
@@ -122,24 +139,20 @@ header {
 /* Problem Browser
 ---------------------------------------------*/ 
 .problem-browser {
-    border: 2px solid #ccc;
-}
-
-
-/* Sections (Placeholder)
----------------------------------------------*/ 
-.cta {
-    border: 2px solid;
-}
-
-.footer { 
-    background-color: #3E3C37;
+    border: 2px solid #A1A09F;
+    border-radius: 8px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-bottom: none;
+    padding: 4rem;
 }
 
 
 /* CTA Form 
 ---------------------------------------------*/ 
-
+.cta {
+    border: 2px solid;
+}
 /* CTA Form Layout */
 @media (min-width: 550px) {
     .cta input[type="email"] {
@@ -178,12 +191,45 @@ header {
 }
 
 
+/* Footer Area
+---------------------------------------------*/ 
+footer, .vision { 
+    background-color: #3E3C37;
+}
 
-/* Utilities */
+.vision {
+    padding: 6.4rem 0;
+}
+
+
+/* Press */
+.press-list li {
+    display: block;
+    float: left;
+    margin-left: 2%;
+    text-align: center;
+    width: 32%;
+
+    /*temporary wireframey stuff*/
+    line-height: 120px;
+    height: 120px;
+    background-color: rgba(255,255,255,0.1)
+}
+
+.press-list li:first-child {
+    margin-left: 0;
+}
+
+/* Utilities
+---------------------------------------------*/ 
 .u-hide {
     display: none;
 }
 
 .u-kern-tr-verlag {
     letter-spacing: -0.15em;
+}
+
+.u-center {
+    text-align: center;
 }
