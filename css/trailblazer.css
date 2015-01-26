@@ -5,13 +5,13 @@
 
 /* Intent of this Stylesheet
 ––––––––––––––––––––––––––––––––––––––––––––––––––
-* Right now, I'm using it to apply colour theme-wide, 
+* Right now, I'm using it to apply colour theme-wide,
 * to hold any custom CSS (parallax). Basic typography is presently set
 * in skeleton.css, but that may change.
 */
 
 /* Base Colours
----------------------------------------------*/ 
+---------------------------------------------*/
 
 body {
     background-color: #FFFAF3;
@@ -26,13 +26,13 @@ a:hover {
 
 /* Temporary Layout Scratchpad
 Treat this as a refactoring pen for quickly blocking stuff out in code.
----------------------------------------------*/ 
+---------------------------------------------*/
 .logo {margin-top: 1rem; margin-bottom: 5rem}
 .intro.bold-statement {margin-bottom: 8rem; position: relative;}
 .intro.bold-statement::after {
     content: "";
     display: block;
-    
+
     background-image: url("../images/down-arrow@2x.png");
     background-size: 100%;
 
@@ -58,18 +58,18 @@ footer h4 {
 }
 
 /* Typographic Overrides
----------------------------------------------*/ 
-body { 
+---------------------------------------------*/
+body {
     /* Gotham SS is set in skeleton.css*/
 }
 
 
-.bold-statement, .lead-statement, .ambitious-statement{ 
-    font-family: 'Verlag A', 'Verlag B'; 
-    font-weight: 400; 
+.bold-statement, .lead-statement, .ambitious-statement{
+    font-family: 'Verlag A', 'Verlag B';
+    font-weight: 400;
     font-style: normal;
     text-rendering: optimizeLegibility;
-    
+
     margin-left: auto;
     margin-right: auto;
 }
@@ -106,7 +106,7 @@ body {
 
 
 /* Navigation
----------------------------------------------*/ 
+---------------------------------------------*/
 
 .nav-list li {
     display: inline-block;
@@ -146,7 +146,7 @@ body {
     background-position: -32px 0;
 }
 .icon.twitter:hover {
-    background-position: -32px -37px;   
+    background-position: -32px -37px;
 }
 
 .icon.facebook {
@@ -154,7 +154,7 @@ body {
 }
 
 .icon.facebook:hover {
-    background-position: 0 -37px;   
+    background-position: 0 -37px;
 }
 
 .icon.email {
@@ -162,12 +162,12 @@ body {
 }
 
 .icon.email:hover {
-    background-position: -64px -37px;   
+    background-position: -64px -37px;
 }
 
 
 /* Header
----------------------------------------------*/ 
+---------------------------------------------*/
 .logo {
     margin-left: auto;
     margin-right: auto;
@@ -179,7 +179,7 @@ header {
 }
 
 /* Problem Browser
----------------------------------------------*/ 
+---------------------------------------------*/
 .problem-browser {
     border: 2px solid #A1A09F;
     border-radius: 8px;
@@ -190,8 +190,8 @@ header {
 }
 
 
-/* CTA Form 
----------------------------------------------*/ 
+/* CTA Form
+---------------------------------------------*/
 .cta {
     border: 2px solid;
 }
@@ -227,16 +227,16 @@ header {
 
 /* CTA Form Styling */
 .cta .button-primary {
-    font-family: 'Verlag A', 'Verlag B'; 
+    font-family: 'Verlag A', 'Verlag B';
     text-transform: none;
     font-size: 1.4em; /*Compensates for Gotham's higher x-height*/
 }
 
 
 /* Footer Area
----------------------------------------------*/ 
+---------------------------------------------*/
 /* Main Section Styles */
-footer, .vision { 
+footer, .vision {
     background-color: #3E3C37;
 }
 
@@ -303,7 +303,7 @@ footer, .vision {
 .footer-nav .nav-list {
     display: block;
     float: left;
-    margin-left: 2%;   
+    margin-left: 2%;
     width: 32%;
 }
 
@@ -321,7 +321,7 @@ footer, .vision {
 }
 
 /* Utilities
----------------------------------------------*/ 
+---------------------------------------------*/
 .u-hide {
     display: none;
 }
