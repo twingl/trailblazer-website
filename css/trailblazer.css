@@ -121,8 +121,50 @@ body {
     letter-spacing: .1rem;
     text-decoration: none;
     color: #333;
+}
+
+.nav-list.main-nav a {
     margin-left: 4em;
 }
+
+.nav-list.contact-nav a {
+    width: 32px;
+    height: 37px;
+    display: block;
+    overflow: hidden;
+    text-indent: -50em;
+    margin-right: 1em;
+}
+
+.icon {
+    background-image: url("../images/presence-icons@2x.png");
+    background-repeat: no-repeat;
+    background-size: 96px 74px;
+}
+
+.icon.twitter {
+    background-position: -32px 0;
+}
+.icon.twitter:hover {
+    background-position: -32px -37px;   
+}
+
+.icon.facebook {
+    background-position: 0 0;
+}
+
+.icon.facebook:hover {
+    background-position: 0 -37px;   
+}
+
+.icon.email {
+    background-position: -64px 0;
+}
+
+.icon.email:hover {
+    background-position: -64px -37px;   
+}
+
 
 /* Header
 ---------------------------------------------*/ 
