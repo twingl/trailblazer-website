@@ -21,6 +21,7 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/trailblazer.css">
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -31,14 +32,64 @@
 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <div class="container">
-    <div class="row">
-      <div class="one-half column" style="margin-top: 25%">
-        <h4>Basic Page</h4>
-        <p>This index.html page is a placeholder with the CSS, font and favicon. It's just waiting for you to add some content! If you need some help hit up the <a href="http://www.getskeleton.com">Skeleton documentation</a>.</p>
+  <!-- Navigation -->
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="three columns" >
+          <p>share icons</p>
+        </div>
+        <div class="three columns offset-by-six" >
+          <p>rest of navigation</p>
+        </div>
       </div>
     </div>
-  </div>
+  </header> 
+  
+  <!-- Hero/Problem/Solution and CTA -->
+  <section class="main">
+    <div class="container">
+      <div class="row">
+        <img src="images/logo@2x.png" width="250px"> <!-- todo: RETINA properly -->
+        <h1><span class="kerning-pair">T</span>railblazer does awesome kerning. Better than you, Hoefler and Co.</h1>
+      </div>
+      <div class="row">
+        <p>This row is where we will stick the browser, and possibly the solution slide as well. I just need to figure out how this thing should work. </p>
+      </div>
+    </div>
+  </section>
+  
+  
+  <section class="cta">
+    <form>
+      <div class="row">
+        
+        <!-- Begin MailChimp Signup Form -->
+        <div id="mc_embed_signup">
+          <form action="//trailblazer.us7.list-manage.com/subscribe/post?u=761a184ba582869b6168d7a60&amp;id=d0b8812a6e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+            <div id="mc_embed_signup_scroll">
+              <h2>Signup CTA Micro-copy</h2>
+              <div class="mc-field-group">
+                <label for="mce-EMAIL" style="display:none;">Email Address  <span class="asterisk">*</span></label>
+                <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+                <div style="position: absolute; left: -5000px;"><input type="text" name="b_761a184ba582869b6168d7a60_d0b8812a6e" tabindex="-1" value=""></div>
+                <input type="submit" value="Sign up" name="subscribe" id="mc-embedded-subscribe" class="button">
+              </div>
+              <div id="mce-responses" class="clear"> <!-- TODO: Make it ajax yo -->
+                <div class="response" id="mce-error-response" style="display:none"></div>
+                <div class="response" id="mce-success-response" style="display:none"></div>
+              </div>
+            </div>
+
+          </form>
+        </div><!--End mc_embed_signup-->
+      </div>
+    </form>
+  </section>
+  
+  <footer>
+
+  </footer>
 
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->

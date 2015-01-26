@@ -1,0 +1,44 @@
+/*
+* Trailblazer Theme
+* Built by Twingl in the second decade of the 21st century
+*/
+
+/* Intent of this Stylesheet
+––––––––––––––––––––––––––––––––––––––––––––––––––
+* Right now, I'm using it to apply colour theme-wide, 
+* to hold any custom CSS (parallax). Basic typography is presently set
+* in skeleton.css, but that may change.
+*/
+
+/* Colour Scheme */
+
+body {
+    background-color: #FFFAF3;
+    color: #A1A09F;
+}
+
+
+/* Typography Base */
+body { 
+    /* Gotham SS is set in skeleton.css*/
+}
+
+h1 { 
+    font-family: 'Verlag A', 'Verlag B'; 
+    font-weight: 400; 
+    font-style: normal;
+    text-rendering: optimizeLegibility;
+}
+
+.kerning-pair {
+    letter-spacing: -0.15em;
+}
+
+/* Sections */
+.cta {
+    border: 2px solid;
+}
+
+.footer { 
+    background-color: #3E3C37;
+}
