@@ -29,21 +29,41 @@ body {
     /* Gotham SS is set in skeleton.css*/
 }
 
-.bold-statement { 
+
+.bold-statement, .lead-statement { 
     font-family: 'Verlag A', 'Verlag B'; 
     font-weight: 400; 
     font-style: normal;
     text-rendering: optimizeLegibility;
-
-    font-size: 4.0rem; 
-    line-height: 1.2;
-    letter-spacing: -.1rem;
     
     text-align: center;
-    max-width: 35em;
+    
     margin-left: auto;
-    margin-bottom: auto;
+    margin-right: auto;
 }
+
+.bold-statement {
+    font-size: 3.2rem;
+    line-height: 1.2;
+    letter-spacing: -.1rem;
+    max-width: 14em;
+}
+
+.lead-statement {
+    line-height: 1.35;
+    letter-spacing: .1rem;
+    max-width: 32em;
+}
+
+@media (min-width: 550px) {
+    .bold-statement {
+        font-size: 3.6rem;
+    }
+    .lead-statement {
+        font-size: 2rem;
+    }
+}
+
 
 /* Navigation
 ---------------------------------------------*/ 
