@@ -42,3 +42,37 @@ h1 {
 .footer { 
     background-color: #3E3C37;
 }
+
+
+
+/* CTA Form */ 
+
+@media (min-width: 550px) {
+    .cta input[type="email"] {
+        height: 76px;
+        padding: 12px 20px; /* The 6px vertically centers text on FF, ignored by Webkit */
+        width: 66.67%;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        border-right: 0;
+    }
+
+    .cta input[type="submit"] {
+        height: 76px;
+        line-height: 76px;
+        width: 33.33%;
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 0;
+        border-left: 0 ;
+    }
+
+    .cta input {
+        font-size: 1.5rem;
+        float: left;
+    }
+
+    .mc-field-group {
+        width: 100%;
+    }
+}
+
