@@ -208,7 +208,7 @@ input[type="button"].button-primary {
   color: #FFFAF3;
   background-color: #84EE78;
   border-color: #84EE78; 
-  text-shadow: 0 1px 1px rgba(170, 170, 170, 0.5);
+  text-shadow: 0 1px 1px rgba(140, 140, 140, 0.5);
 }
 .button.button-primary:hover,
 button.button-primary:hover,
@@ -268,7 +268,7 @@ input[type="url"]:focus,
 input[type="password"]:focus,
 textarea:focus,
 select:focus {
-  border: 1px solid #33C3F0;
+  border: 1px solid #70E164;
   outline: 0; }
 label,
 legend {
