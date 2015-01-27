@@ -19,9 +19,12 @@ body {
 }
 
 a {
-  color: red; }
+  color: #F6643F; 
+}
+
 a:hover {
-  color: maroon; }
+  color: #FF3C0A; 
+}
 
 
 /* Temporary Layout Scratchpad
@@ -78,7 +81,6 @@ body {
     font-size: 3.2rem;
     line-height: 1.2;
     text-align: center;
-    /*letter-spacing: -.1rem;*/
     max-width: 14em;
 }
 
@@ -120,11 +122,19 @@ body {
     font-size: 11px;
     letter-spacing: .1rem;
     text-decoration: none;
-    color: #333;
+    color: #3E3C37;
+}
+
+.nav-list a:hover {
+    color: #FF3C0A;
 }
 
 .nav-list.main-nav a {
     margin-left: 4em;
+}
+
+.nav-text-link {
+    padding: 1em 0;
 }
 
 .nav-list.contact-nav a {
@@ -200,7 +210,7 @@ header {
     .cta input[type="email"] {
         height: 76px;
         padding: 12px 20px; /* The 6px vertically centers text on FF, ignored by Webkit */
-        width: 66.67%;
+        width: 60%;
         border-top-right-radius: 0;
         border-bottom-right-radius: 0;
         border-right: 0;
@@ -209,7 +219,7 @@ header {
     .cta input[type="submit"] {
         height: 76px;
         line-height: 76px;
-        width: 33.33%;
+        width: 40%;
         border-bottom-left-radius: 0;
         border-top-left-radius: 0;
         border-left: 0 ;
