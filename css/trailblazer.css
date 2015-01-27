@@ -291,13 +291,23 @@ header {
 }
 
 /* CTA Form : States */
-#mc_embed_signup {
-    display: none;
+.form-error {
+    visibility: hidden;
+    padding: 2rem;
+    color: red;
+    border: 2px solid red;
+    border-radius:4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.form-wrapper.error input {
+    border-color: red;
 }
 
-.post-signup-1 {
-
+.form-wrapper.error .form-error {
+    visibility: visible;
 }
+
 /* TBC */
 
 /* Footer Area
