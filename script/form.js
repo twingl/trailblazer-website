@@ -73,8 +73,10 @@ domready(function() {
 
 
   var submitBetaPreference = function(evt) {
-    var tolerance = evt.currentTarget.value;
-    var txtEmail  = document.getElementById('email');
+    var tolerance = evt.currentTarget.value
+      , txtEmail  = document.getElementById('email')
+      , ctaSection  = document.getElementById('cta-section');
+
     ctaSection.classList.remove('form-great-error');
 
     if (testEmail(txtEmail.value)) {
