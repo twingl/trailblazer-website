@@ -306,6 +306,10 @@ header {
     display: block;
 }
 
+.cta.form-error input {
+    border-color: red;
+}
+
 /* Success - BEGIN PHASE TWO */ 
 
 .cta.form-success {
