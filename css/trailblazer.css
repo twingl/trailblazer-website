@@ -236,12 +236,15 @@ header {
 /* Problem Browser
 ---------------------------------------------*/
 .problem-browser {
-    border: 2px solid #A1A09F;
-    border-radius: 8px;
-    border-bottom-right-radius: 0;
-    border-bottom-left-radius: 0;
+    /*border: 2px solid #A1A09F;*/
+    /*border-radius: 8px;*/
+    /*border-bottom-right-radius: 0;*/
+    /*border-bottom-left-radius: 0;*/
     border-bottom: none;
     padding: 4rem;
+    background-image: url("../images/problem-browser.svg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
 }
 
 
