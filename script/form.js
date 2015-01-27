@@ -34,7 +34,13 @@ domready(function() {
             //
             // Let's show the visitor their approximate place in the queue.
             ctaSection.classList.add('form-success');
-            document.getElementById('queue-length').innerHTML = response.body.position;
+            if (response.body && response.body.position) {
+              var el = document.getElementById('queue-length');
+              if (el) el.innerHTML = response.body.position;
+            } else {
+              var el = document.getElementById('queue-length');
+              if (el) el.innerHTML = "many";
+            }
 
           } else {
             // Oops - something might have gone wrong.
@@ -48,7 +54,8 @@ domready(function() {
               // This is an error response being interpreted and displayed as a
               // success.
               ctaSection.classList.add('form-success');
-              document.getElementById('queue-length').innerHTML = "many";
+              var el = document.getElementById('queue-length');
+              if (el) el.innerHTML = "many";
             } else {
               // Fishy. The email address they used looks suspicious.
               //
@@ -91,7 +98,13 @@ domready(function() {
   };
 
   // Wire up those buttons
-  document.getElementById('jank-tolerance-mild').onclick = submitBetaPreference;
-  document.getElementById('jank-tolerance-medium').onclick = submitBetaPreference;
-  document.getElementById('jank-tolerance-hot').onclick = submitBetaPreference;
+  var el;
+  el = document.getElementById('jank-tolerance-mild');
+  if (el) el.onclick = submitBetaPreference;
+
+  el = document.getElementById('jank-tolerance-medium');
+  if (el) el.onclick = submitBetaPreference;
+
+  el = document.getElementById('jank-tolerance-hot');
+  if (el) el.onclick = submitBetaPreference;
 });

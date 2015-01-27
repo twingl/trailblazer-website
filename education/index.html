@@ -27,6 +27,13 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="../images/favicon.png">
 
+  <!-- Form handlers
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="/script/lib/element.classList.shim.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/script/lib/domready.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/script/lib/superagent.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/script/form.js" type="text/javascript" charset="utf-8"></script>
+
 </head>
 <body>
 
@@ -84,9 +91,9 @@
   </section>
   
   
-  <section class="cta"><!-- .form-success and .form-error states go here -->
+  <section class="cta" id="cta-section"><!-- .form-success and .form-error states go here -->
     <div class="container">
-      <form class="row">
+      <form class="row" id="registration-form" action="http://beta.trailblazer.io/education/subscribe" method="POST">
         <div class="form-wrapper  signup  ten columns  offset-by-one">
           <input type="email" value="" name="EMAIL" id="email" class="required email" placeholder="Your email here, most noble educator!">
           <input type="submit" value="Join the beta." name="subscribe" id="subscribe" class="button button-primary">
