@@ -75,21 +75,25 @@
   </section>
   
   
-  <section class="cta">
+  <section class="cta"><!-- .form-success and .form-error states go here -->
     <div class="container">
       <form class="signup-form  signup  row">
-        <div class="form-wrapper  ten columns  offset-by-one  error">
+        <div class="form-wrapper  ten columns  offset-by-one  ">
           <input type="email" value="" name="EMAIL" id="email" class="required email" placeholder="Your email here, fine human!">
           <input type="submit" value="Join the beta." name="subscribe" id="subscribe" class="button button-primary">
-          <p class="form-error u-cf"><strong>Phrasing!</strong> We couldn’t process that email. Did you mistype it, perchance?</p>
+          <p class="form-error-text u-cf"><strong>Phrasing!</strong> We couldn’t process that email. Did you mistype it, perchance?</p>
         </div>
       </form> 
       
       <form class="signup-form  post-signup  row">
         <div class="form-wrapper  ten columns  offset-by-one">
-          <p>Got it! You’re one of <strong>399</strong> in the queue! </p>
-          <p>To help us roll out to you, answer this optional question.</p>
-          <p>How beta do you like your software?</p>
+          <p class="lead-statement">Got it! You’re one of <strong>399</strong> in the queue! </p>
+          <h4>How beta do you like your software?</h4>
+          <p>This optional question helps us roll Trailblazer out to you when it's ready for <em>you.</em></p>
+          <button>In the danger zone.</button>
+          <button>I can take a bit of jank.</button>
+          <button>Mostly reliable.</button>
+          <button>A monkey could use it.</button>
         </div>
       </form>
     </div>
