@@ -133,7 +133,7 @@ body {
     margin-left: 4em;
 }
 
-.nav-text-link {
+.nav-text-link, .footer-nav a {
     padding: 1em 0;
 }
 
