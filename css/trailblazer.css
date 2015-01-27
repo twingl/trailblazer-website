@@ -149,6 +149,19 @@ body {
     margin-right: 1em;
 }
 
+
+@media (max-width: 550px) {
+    header .nav-list {text-align: center;}
+    header .contact-nav a {
+        margin-left:1em;
+    }
+    .nav-list.main-nav a {
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+}
+
+/* Navigation Icons*/
 .icon {
     background-image: url("../images/presence-icons@2x.png");
     background-repeat: no-repeat;
