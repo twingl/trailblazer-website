@@ -27,6 +27,10 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="images/favicon.png">
 
+  <!-- Form handlers
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="/script/form.js" type="text/javascript" charset="utf-8"></script>
+
 </head>
 <body>
 
@@ -74,24 +78,8 @@
   <section class="cta">
     <form class="container">
       <div class="row">
-        <!-- Begin MailChimp Signup Form -->
-        <div id="mc_embed_signup"  class="ten columns  offset-by-one">
-          <form action="//trailblazer.us7.list-manage.com/subscribe/post?u=761a184ba582869b6168d7a60&amp;id=d0b8812a6e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-            <div id="mc_embed_signup_scroll">
-              <div class="mc-field-group  u-cf">
-                <label for="mce-EMAIL" style="display:none;">Email Address  <span class="asterisk">*</span></label>
-                <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Your email here, fine human!">
-                <div style="position: absolute; left: -5000px;"><input type="text" name="b_761a184ba582869b6168d7a60_d0b8812a6e" tabindex="-1" value=""></div>
-                <input type="submit" value="Join the beta." name="subscribe" id="mc-embedded-subscribe" class="button  button-primary">
-              </div>
-              <div id="mce-responses"> <!--TODO: Make it ajax yo -->
-                <div class="response" id="mce-error-response" style="display:none"></div>
-                <div class="response" id="mce-success-response" style="display:none"></div>
-              </div>
-            </div>
-
-          </form>
-        </div><!--End mc_embed_signup-->
+        <input type="email" value="" name="EMAIL" id="email" class="required email" placeholder="Your email here, fine human!">
+        <input type="submit" value="Join the beta." name="subscribe" id="subscribe" class="button button-primary">
       </div>
     </form>
   </section>
