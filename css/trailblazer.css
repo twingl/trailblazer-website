@@ -323,11 +323,11 @@ header {
     font-size: 2.4rem;
 }
 
-.signup-form.post-signup {
+.form-wrapper.post-signup {
     display: none;
 }
 
-.cta.form-success .signup-form.post-signup {
+.cta.form-success .form-wrapper.post-signup {
     display: block;
 }
 
