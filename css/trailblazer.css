@@ -242,7 +242,7 @@ header {
     /*border-bottom-left-radius: 0;*/
     border-bottom: none;
     padding: 4rem;
-    background-image: url("../images/problem-browser.svg");
+    background-image: url("../images/problem-browser.png");
     background-size: 100% auto;
     background-repeat: no-repeat;
 }
