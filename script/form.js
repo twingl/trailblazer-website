@@ -64,4 +64,34 @@ domready(function() {
     return false;
   };
 
+
+  var submitBetaPreference = function(evt) {
+    var tolerance = evt.currentTarget.value;
+    var txtEmail  = document.getElementById('email');
+    ctaSection.classList.remove('form-great-error');
+
+    if (testEmail(txtEmail.value)) {
+      superagent
+        .post("http://beta.trailblazer.io/beta_preference")
+        .send({
+          email: txtEmail.value,
+          tolerance: tolerance
+        })
+        .end(function(response) {
+          if (response.ok) {
+            ctaSection.classList.remove('form-success');
+            ctaSection.classList.add('form-great-success');
+          } else {
+            ctaSection.classList.add('form-great-error');
+          }
+        });
+    }
+
+    return false;
+  };
+
+  // Wire up those buttons
+  document.getElementById('jank-tolerance-mild').onclick = submitBetaPreference;
+  document.getElementById('jank-tolerance-medium').onclick = submitBetaPreference;
+  document.getElementById('jank-tolerance-hot').onclick = submitBetaPreference;
 });
