@@ -33,6 +33,7 @@ Treat this as a refactoring pen for quickly blocking stuff out in code.
 a[href="/about/"] {
     display: none;
 }
+
 .logo {margin-top: 1rem; margin-bottom: 5rem}
 .intro.bold-statement {margin-bottom: 8rem; position: relative;}
 .intro.bold-statement::after {
@@ -162,6 +163,26 @@ body {
         margin-left: 1em;
         margin-right: 1em;
     }
+}
+
+.button-primary.button-education {
+    background-color: #1DAFAD;
+    border-color: #1DAFAD;
+}
+
+.button-primary.button-education:hover {
+    background-color: #2DD2D0;
+    border-color: #2DD2D0;
+}
+
+.button-primary.button-individuals {
+    background-color: #F6643F;
+    border-color: #F6643F;
+}
+
+.button-primary.button-individuals:hover {
+    background-color: #FF3C0A;
+    border-color: #FF3C0A;
 }
 
 /* Navigation Icons*/
