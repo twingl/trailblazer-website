@@ -300,41 +300,25 @@ footer, .vision {
 }
 
 /* Press */
-.press-list li {
+.press a {
     display: block;
-    float: left;
-    margin-left: 2%;
-    text-align: center;
-    width: 32%;
 
     /*temporary wireframey stuff*/
-    line-height: 120px;
-    height: 120px;
+    line-height: 100px;
+    text-align: center;
+    height: 100px;
     background-color: rgba(255,255,255,0.1)
 }
 
-.press-list li:first-child {
-    margin-left: 0;
-}
-
-.press-list {
-    border-bottom: 1px solid #FFFAF3;
+.press {
     padding-bottom: 3em;
     margin-bottom: 3em;
 }
 
 /* Navigation */
-.footer-nav .nav-list {
-    display: block;
-    float: left;
-    margin-left: 2%;
-    width: 32%;
+.footer-nav {
+    border-top: 1px solid #FFFAF3;
 }
-
-.footer-nav .nav-list:first-child {
-    margin-left: 0
-}
-
 .footer-nav .nav-list li {
     display: list-item;
     list-style: none;
@@ -343,6 +327,10 @@ footer, .vision {
 .footer-nav a {
     color: #FFFAF3;
 }
+
+/* Twingl * / 
+
+/* This is the finishing flourish. Add it as the last thing before we go live. */
 
 /* Utilities
 ---------------------------------------------*/
