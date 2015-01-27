@@ -263,10 +263,6 @@ header {
     float: left;
 }
 
-.mc-field-group {
-    width: 100%;
-}
-
 @media (min-width: 768px) {
     .cta input[type="email"] {
         height: 76px;
@@ -300,7 +296,7 @@ header {
 }
 
 .post-signup-1 {
-    
+
 }
 /* TBC */
 
