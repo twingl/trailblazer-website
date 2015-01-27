@@ -71,7 +71,7 @@ body {
 }
 
 
-.bold-statement, .lead-statement, .ambitious-statement{
+.bold-statement, .lead-statement, .less-leading-statement, .ambitious-statement{
     font-family: 'Verlag A', 'Verlag B';
     font-weight: 400;
     font-style: normal;
@@ -99,6 +99,11 @@ body {
     line-height: 1.2;
     color: #FFFAF3;
     max-width: 18em;
+}
+
+.less-leading-statement {
+    font-size: 1.5rem;
+    line-height: 1.2;
 }
 
 @media (min-width: 550px) {
@@ -317,10 +322,16 @@ header {
 }
 
 .cta.form-success .signup {display: none}
+
 .cta.form-success .lead-statement {
+    font-size: 2.4rem;
+    margin-bottom: 0.8rem;
+}
+
+.cta.form-success .lead-statement,
+.cta.form-success .less-leading-statement {
     color: #3E3C37;
     text-align: center;
-    font-size: 2.4rem;
 }
 
 .form-wrapper.post-signup {
