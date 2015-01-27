@@ -357,7 +357,7 @@ footer, .vision {
 }
 
 .vision-ctas {
-    border-bottom: 1px solid #FFFAF3;
+    border-bottom: 8px solid #FFFAF3;
     margin-bottom: 0.5em;
     padding-bottom: 1.5em;
 }
@@ -395,13 +395,13 @@ footer, .vision {
 }
 
 .press {
-    padding-bottom: 3em;
-    margin-bottom: 3em;
+    margin-bottom: 3rem;
 }
 
 /* Navigation */
 .footer-nav {
-    border-top: 1px solid #FFFAF3;
+    /*border-top: 1px solid #FFFAF3;*/
+    padding-top: 3rem;
 }
 .footer-nav .nav-list li {
     display: list-item;
@@ -412,9 +412,44 @@ footer, .vision {
     color: #FFFAF3;
 }
 
-/* Twingl * / 
+/* Twingl */
 
-/* This is the finishing flourish. Add it as the last thing before we go live. */
+.colophon {
+    background-color: #941635;
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.twingl {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #FFFAF3;
+    font-size: 0.9rem;
+    letter-spacing: 0.1rem;
+    line-height: 1.2;
+    padding-bottom: 2em;
+    text-transform: uppercase;
+    -webkit-transition: background-color 0.1s ease-in-out;
+    transition: background-color 0.1s ease-in-out;
+}
+
+.twingl:hover {
+    color: #fff;
+    background-color: rgba(255,255,255,0.1)
+}
+
+.twingl::before {
+    content: "";
+    display: block;
+    position: relative;
+    top: -13px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 42px;
+    height: 48px;
+    background-image: url("../images/twingl-colophon@2x.png");
+    background-size: 42px 48px;
+}
 
 /* Utilities
 ---------------------------------------------*/
@@ -428,4 +463,8 @@ footer, .vision {
 
 .u-center {
     text-align: center;
+}
+
+.u-right-align {
+    text-align: right;
 }
