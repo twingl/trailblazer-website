@@ -203,10 +203,31 @@ header {
 /* CTA Form
 ---------------------------------------------*/
 .cta {
-    border: 2px solid;
+    border-top: 2px solid #A1A09F;
+    padding-top: 1em;
 }
-/* CTA Form Layout */
-@media (min-width: 550px) {
+
+.cta input[type="email"] {
+    height: 64px;
+    width: 100%;
+}
+
+.cta input[type="submit"] {
+    height: 64px;
+    line-height: 64px;
+    width: 100%;
+}
+
+.cta input {
+    font-size: 1.5rem;
+    float: left;
+}
+
+.mc-field-group {
+    width: 100%;
+}
+
+@media (min-width: 768px) {
     .cta input[type="email"] {
         height: 76px;
         padding: 12px 20px; /* The 6px vertically centers text on FF, ignored by Webkit */
@@ -223,16 +244,7 @@ header {
         border-bottom-left-radius: 0;
         border-top-left-radius: 0;
         border-left: 0 ;
-    }
-
-    .cta input {
-        font-size: 1.5rem;
-        float: left;
-    }
-
-    .mc-field-group {
-        width: 100%;
-    }
+    }   
 }
 
 /* CTA Form Styling */
@@ -242,6 +254,8 @@ header {
     font-size: 1.4em; /*Compensates for Gotham's higher x-height*/
 }
 
+/* CTA Form : States */
+/* TBC */
 
 /* Footer Area
 ---------------------------------------------*/
