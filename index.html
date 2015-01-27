@@ -29,6 +29,9 @@
 
   <!-- Form handlers
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="/script/lib/element.classList.shim.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/script/lib/domready.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/script/lib/superagent.js" type="text/javascript" charset="utf-8"></script>
   <script src="/script/form.js" type="text/javascript" charset="utf-8"></script>
 
 </head>
@@ -75,9 +78,9 @@
 </section>
   
   
-  <section class="cta"><!-- .form-success and .form-error states go here -->
+  <section class="cta" id="cta-section"><!-- .form-success and .form-error states go here -->
     <div class="container">
-      <form class="row">
+      <form class="row" id="registration-form" action="http://beta.trailblazer.io/subscribe" method="POST">
         <div class="form-wrapper  signup  ten columns  offset-by-one">
           <input type="email" value="" name="EMAIL" id="email" class="required email" placeholder="Your email here, fine human!">
           <input type="submit" value="Join the beta." name="subscribe" id="subscribe" class="button button-primary">
@@ -85,11 +88,11 @@
         </div>
       
         <div class="form-wrapper  post-signup  ten columns  offset-by-one">
-          <p class="lead-statement">Splendid! You’re one of <strong>399</strong> in the queue! Check your email.</p>
+          <p class="lead-statement">Splendid! You’re one of <strong id="queue-length">399</strong> in the queue! Check your email.</p>
           <p class="less-leading-statement"><strong>By the way:</strong> how beta do you like your software? (Optional)</p>
-          <button>In the danger zone.</button>
-          <button>I can take a bit of jank.</button>
-          <button>90% of the time, it works every time.</button>
+          <button name="jank-spiciness" value="hot" id="jank-tolerance-hot">In the danger zone.</button>
+          <button name="jank-spiciness" value="medium" id="jank-tolerance-medium">I can take a bit of jank.</button>
+          <button name="jank-spiciness" value="mild" id="jank-tolerance-mild">90% of the time, it works every time.</button>
         </div>
       </form> 
       
