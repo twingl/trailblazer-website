@@ -321,7 +321,7 @@ header {
 /* CTA Form
 ---------------------------------------------*/
 .cta {
-    border-top: 2px solid #A1A09F;
+    border-top: 2px solid #3E3C37;
     padding-top: 1em;
 }
 
@@ -362,6 +362,9 @@ header {
 }
 
 /* CTA Form Styling */
+#registration-form {
+    margin-bottom: 0;
+}
 .cta .button-primary {
     font-family: 'Verlag A', 'Verlag B';
     text-transform: none;
