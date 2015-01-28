@@ -390,28 +390,32 @@ header {
 
 /* Success - BEGIN PHASE TWO */ 
 
-.cta.form-success {
+.cta.form-success, .cta.form-great-success {
     background-color: #84EE78; 
 }
 
-.cta.form-success .signup {display: none}
+.cta.form-success .signup, .cta.form-great-success .signup {display: none}
 
-.cta.form-success .lead-statement {
+.form-wrapper .lead-statement {
     font-size: 2.4rem;
     margin-bottom: 0.8rem;
 }
 
-.cta.form-success .lead-statement,
-.cta.form-success .less-leading-statement {
+.form-wrapper .lead-statement,
+.form-wrapper .less-leading-statement {
     color: #3E3C37;
     text-align: center;
 }
 
-.form-wrapper.post-signup {
+.form-wrapper.post-signup, .form-wrapper.post-post-signup {
     display: none;
 }
 
 .cta.form-success .form-wrapper.post-signup {
+    display: block;
+}
+
+.cta.form-great-success .form-wrapper.post-post-signup {
     display: block;
 }
 
