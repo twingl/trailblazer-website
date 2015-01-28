@@ -16,6 +16,7 @@ domready(function() {
     if (testEmail(txtEmail.value)) {
       ctaSection.classList.remove('form-success');
       ctaSection.classList.remove('form-error');
+      ga('send', 'event', 'form', 'submit', 'subscribe');
 
       // Let's get this person signed up, quick smart! Request: GO!
       superagent
@@ -34,6 +35,7 @@ domready(function() {
             //
             // Let's show the visitor their approximate place in the queue.
             ctaSection.classList.add('form-success');
+            ga('send', 'event', 'form', 'submit', 'success');
             if (response.body && response.body.position) {
               var el = document.getElementById('queue-length');
               if (el) el.innerHTML = response.body.position;
@@ -80,6 +82,8 @@ domready(function() {
     ctaSection.classList.remove('form-great-error');
 
     if (testEmail(txtEmail.value)) {
+      ga('send', 'event', 'form', 'submit', 'beta_preference');
+
       superagent
         .post("http://beta.trailblazer.io/beta_preference")
         .send({
@@ -88,6 +92,7 @@ domready(function() {
         })
         .end(function(response) {
           if (response.ok) {
+            ga('send', 'event', 'form', 'success', 'beta_preference');
             ctaSection.classList.remove('form-success');
             ctaSection.classList.add('form-great-success');
           } else {
