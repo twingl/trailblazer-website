@@ -108,7 +108,7 @@ domready(function() {
   var submitEducatorType = function(evt) {
     var type = evt.currentTarget.value
       , txtEmail  = document.getElementById('email')
-      , ctaSection  = document.getElementById('cta-section');
+      , ctaSection  = document.getElementById('sign-up');
 
     ctaSection.classList.remove('form-great-error');
 
@@ -155,5 +155,8 @@ domready(function() {
   if (el) el.onclick = submitEducatorType;
 
   el = document.getElementById('educator-type-tertiary');
+  if (el) el.onclick = submitEducatorType;
+
+  el = document.getElementById('educator-type-other');
   if (el) el.onclick = submitEducatorType;
 });
