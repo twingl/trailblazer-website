@@ -11,7 +11,7 @@ domready(function() {
 
   form.onsubmit = function() {
     var txtEmail    = document.getElementById('email');
-    var ctaSection  = document.getElementById('cta-section');
+    var ctaSection  = document.getElementById('sign-up');
 
     if (testEmail(txtEmail.value)) {
       ctaSection.classList.remove('form-success');
@@ -75,7 +75,7 @@ domready(function() {
   var submitBetaPreference = function(evt) {
     var tolerance = evt.currentTarget.value
       , txtEmail  = document.getElementById('email')
-      , ctaSection  = document.getElementById('cta-section');
+      , ctaSection  = document.getElementById('sign-up');
 
     ctaSection.classList.remove('form-great-error');
 

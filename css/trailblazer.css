@@ -29,6 +29,8 @@ a:hover {
 
 /* Temporary Layout Scratchpad
 Treat this as a refactoring pen for quickly blocking stuff out in code.
+Shit. It's going to stay like this for a while, isn't it?
+#crunchtime
 ---------------------------------------------*/
 a[href="/about/"] {
     display: none;
@@ -36,22 +38,6 @@ a[href="/about/"] {
 
 .logo {margin-top: 1rem; margin-bottom: 5rem}
 .intro.bold-statement {margin-bottom: 8rem; position: relative;}
-.intro.bold-statement::after {
-    content: "";
-    display: block;
-
-    background-image: url("../images/down-arrow@2x.png");
-    background-size: 100%;
-
-    width: 34px;
-    height: 40px;
-    bottom: 0;
-
-    margin-left: auto;
-    margin-right: auto;
-
-    margin-top: 2em;
-}
 
 div .problem-browser {
     padding-top: 12rem;
@@ -62,6 +48,10 @@ footer h4 {
     text-transform: uppercase;
     font-size: 1.2rem;
     letter-spacing: 0.1rem;
+}
+
+.scroll-to-cta {
+
 }
 
 /* Typographic Overrides
@@ -233,6 +223,34 @@ header {
     margin-top: 3rem;
 }
 
+.intro .scroll-to-cta {
+    display: inline-block;
+    margin-top: 5.5rem;
+    font-size: 0.7em;
+    text-decoration: none;
+}
+
+.intro .scroll-to-cta:hover {
+    text-decoration: underline;
+}
+
+.intro .scroll-to-cta::after {
+    content: "";
+    display: block;
+
+    background-image: url("../images/down-arrow@2x.png");
+    background-size: 100%;
+
+    width: 34px;
+    height: 40px;
+    bottom: 0;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    margin-top: 1.4rem;
+}
+
 /* Problem Browser
 ---------------------------------------------*/
 .problem-browser {
@@ -288,11 +306,7 @@ header {
     font-size: 1.8rem;
 }
 
-.scroll-to-cta {
-    /*text-decoration: none;*/
-}
-
-.scroll-to-cta::after {
+.solution .scroll-to-cta::after {
     content: "";
     display: inline-block;
     margin-left: .5em;
