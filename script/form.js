@@ -104,6 +104,37 @@ domready(function() {
     return false;
   };
 
+
+  var submitEducatorType = function(evt) {
+    var type = evt.currentTarget.value
+      , txtEmail  = document.getElementById('email')
+      , ctaSection  = document.getElementById('cta-section');
+
+    ctaSection.classList.remove('form-great-error');
+
+    if (testEmail(txtEmail.value)) {
+      ga('send', 'event', 'form', 'submit', 'educator_type');
+
+      superagent
+        .post("http://beta.trailblazer.io/education/type")
+        .send({
+          email: txtEmail.value,
+          type: type
+        })
+        .end(function(response) {
+          if (response.ok) {
+            ga('send', 'event', 'form', 'success', 'educator_type');
+            ctaSection.classList.remove('form-success');
+            ctaSection.classList.add('form-great-success');
+          } else {
+            ctaSection.classList.add('form-great-error');
+          }
+        });
+    }
+
+    return false;
+  };
+
   // Wire up those buttons
   var el;
   el = document.getElementById('jank-tolerance-mild');
@@ -114,4 +145,15 @@ domready(function() {
 
   el = document.getElementById('jank-tolerance-hot');
   if (el) el.onclick = submitBetaPreference;
+
+  // Wire up those buttons
+  var el;
+  el = document.getElementById('educator-type-primary');
+  if (el) el.onclick = submitEducatorType;
+
+  el = document.getElementById('educator-type-secondary');
+  if (el) el.onclick = submitEducatorType;
+
+  el = document.getElementById('educator-type-tertiary');
+  if (el) el.onclick = submitEducatorType;
 });
