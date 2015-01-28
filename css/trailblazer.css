@@ -247,6 +247,62 @@ header {
     background-repeat: no-repeat;
 }
 
+/* Solution Screenshot
+---------------------------------------------*/
+.solution {
+    background-color: #3E3C37;
+    color: #FFFAF3;
+}
+
+.trailblazer-screenshot {
+    width: 100%;
+}
+
+.value-proposition {
+    font-size: 1.2rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+
+.value-proposition li {
+    display: inline-block;
+    margin-bottom: 3rem;
+}
+
+@media (min-width:768px) {
+    .value-proposition li {
+        width: 44%;
+        vertical-align: top;
+        margin-right: 5.5%;
+    }    
+}
+
+
+.solution .lead-statement {
+    margin: 3.2rem 4rem;
+}
+
+.solution h4 {
+    font-family: 'Verlag A', 'Verlag B';
+    letter-spacing: 0.1rem;
+    font-size: 1.8rem;
+}
+
+.scroll-to-cta {
+    /*text-decoration: none;*/
+}
+
+.scroll-to-cta::after {
+    content: "";
+    display: inline-block;
+    margin-left: .5em;
+    vertical-align: middle;
+    margin-top: -1px; /*Optical balancing */
+    width: 14px;
+    height: 12px;
+    background-image: url("../images/right-arrow@2x.png");
+    background-size: 14px 12px;
+}
 
 /* CTA Form
 ---------------------------------------------*/
