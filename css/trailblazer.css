@@ -39,9 +39,12 @@ a[href="/about/"], a[href="/about"]  {
 .logo {margin-top: 1rem; margin-bottom: 5rem}
 .intro.bold-statement {margin-bottom: 8rem; position: relative;}
 
-div .problem-browser {
-    padding-top: 12rem;
+@media (min-width: 500px) {
+    div .problem-browser {
+        padding-top: 12rem;
+    }    
 }
+
 
 footer h4 {
     /*Decide what this is semantically later: right now, we just want a stlye*/
@@ -495,6 +498,15 @@ footer, .vision {
     color: #FFFAF3;
 }
 
+@media (max-width: 550px) {
+    .footer-nav-right {margin-bottom: 0}
+}
+@media (min-width: 550px) {
+    .footer-nav-right {
+        text-align: right;
+    }    
+}
+
 /* Twingl */
 
 .colophon {
@@ -509,7 +521,7 @@ footer, .vision {
     color: #FFFAF3;
     font-size: 0.9rem;
     letter-spacing: 0.1rem;
-    line-height: 1.2;
+    line-height: 1.5;
     padding-bottom: 2em;
     text-transform: uppercase;
     -webkit-transition: background-color 0.1s ease-in-out;
@@ -546,8 +558,4 @@ footer, .vision {
 
 .u-center {
     text-align: center;
-}
-
-.u-right-align {
-    text-align: right;
-}
+}`
