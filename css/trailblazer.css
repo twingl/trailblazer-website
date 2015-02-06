@@ -374,6 +374,16 @@ header {
     font-size: 1.4em; /*Compensates for Gotham's higher x-height*/
 }
 
+.cta.form-great-success .button {
+    border-color: #555;
+}
+
+.twitter-share {
+    vertical-align: middle;
+    display: inline-block;
+    margin-left: 0.7rem;
+}
+
 /* CTA Form : States */
 /* Error */
 .form-error-text {
