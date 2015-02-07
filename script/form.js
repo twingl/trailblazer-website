@@ -157,6 +157,9 @@ domready(function() {
   el = document.getElementById('educator-type-tertiary');
   if (el) el.onclick = submitEducatorType;
 
+  el = document.getElementById('educator-type-librarian');
+  if (el) el.onclick = submitEducatorType;
+
   el = document.getElementById('educator-type-other');
   if (el) el.onclick = submitEducatorType;
 });
