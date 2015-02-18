@@ -19,11 +19,12 @@ body {
 }
 
 a {
-  color: #F6643F; 
+    color: #F6643F; 
+    transition: 0.3s ease;
 }
 
 a:hover {
-  color: #FF3C0A; 
+    color: #FF3C0A;
 }
 
 
@@ -188,6 +189,7 @@ body {
     background-image: url("../images/presence-icons@2x.png");
     background-repeat: no-repeat;
     background-size: 96px 74px;
+    transition: 0s;
 }
 
 .icon.twitter {
@@ -325,7 +327,8 @@ header {
 ---------------------------------------------*/
 .cta {
     border-top: 2px solid #3E3C37;
-    padding-top: 1em;
+    padding-top: 4em;
+    padding-bottom: 3em;
 }
 
 .cta input[type="email"] {
@@ -490,6 +493,7 @@ footer, .vision {
 .press a img {
     vertical-align: middle;
     opacity: 0.4;
+    transition: 0.5s;
 }
 
 .press a:hover img {
