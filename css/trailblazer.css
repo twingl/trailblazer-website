@@ -406,6 +406,11 @@ header {
 
 /* Success - BEGIN PHASE TWO */ 
 
+.cta.form-success .hide-on-success,
+.cta.form-great-success .hide-on-success {
+  display: none;
+}
+
 .cta.form-success, .cta.form-great-success {
     background-color: #84EE78; 
 }

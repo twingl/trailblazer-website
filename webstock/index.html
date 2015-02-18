@@ -116,10 +116,15 @@
   
   <section class="cta  webstock" id="sign-up"><!-- .form-success and .form-error states go here -->
     <div class="container">
-      <div class="ten columns  offset-by-one"><p class="bold-statement">Greetings, Webstockians!</p>
-            <p>You get to be the first to come in to Trailblazer and kick the tires. Just drop your email in below: you’ll get an installation link sent to you. </p>
-            <p>If you come and find us, we’ll even throw in a sticker for free!</p>
-            <a class="button" href="http://hive.twin.gl/">See the Trails people have made so far</a></div>
+      <div class="ten columns  offset-by-one">
+        <div class="hide-on-success">
+          <p class="bold-statement">Greetings, Webstockians!</p>
+          <p>You get to be the first to come in to Trailblazer and kick the tires. Just drop your email in below: you’ll get an installation link sent to you. </p>
+          <p>If you come and find us, we’ll even throw in a sticker for free!</p>
+          <a class="button" href="http://hive.twin.gl/">See the Trails people have made so far</a>
+        </div>
+      </div>
+
       <form class="row" id="registration-form" action="http://beta.trailblazer.io/webstock/subscribe" method="POST">
         <div class="form-wrapper  signup  ten columns  offset-by-one">
           <input type="email" value="" name="EMAIL" id="email" class="required email" placeholder="Place thy email here, friend!">
@@ -129,18 +134,16 @@
       
         <div class="form-wrapper  post-signup  ten columns  offset-by-one">
           <p class="lead-statement">Splendid! We have emailed you a link to install Trailblazer. Open it on a device that has Google Chrome installed and follow the instructions. </p>
-          <p class="less-leading-statement"><a class="button" href="http://blog.twin.gl/">check out our blog</a> &nbsp; or tell your friends <span class="twitter-share"><a class="twitter-share-button"
-            href="https://twitter.com/share"  data-text="Just signed up for Trailblazer. It maps out your journey across the web—no more tab overload!" data-size="large">
-          Tweet
-          </a></span></p>
+          <p class="less-leading-statement"><a class="button" href="http://blog.twin.gl/">check out our blog</a> <a class="button" href="http://hive.twin.gl/">See the Trails people have made so far</a></p>
         </div>
+
         <div class="form-wrapper  post-post-signup  ten columns  offset-by-one">
           <p class="lead-statement">Alright, got it! That’s us done here.</p>
           <p class="less-leading-statement">Expect to get an email in the near future. We can’t wait to have you! <br></p>
-          <p class="less-leading-statement"><a class="button" href="http://blog.twin.gl/">check out our blog</a> &nbsp; or tell your friends <span class="twitter-share"><a class="twitter-share-button"
-            href="https://twitter.com/share"  data-text="Just signed up for Trailblazer. It maps out your journey across the web—no more tab overload!" data-size="large">
-          Tweet
-          </a></span></p>
+          <p class="less-leading-statement">
+            <a class="button" href="http://blog.twin.gl/">check out our blog</a> or 
+            <a class="button" href="http://hive.twin.gl/">See the Trails people have made so far</a>
+          </p>
 
         </div>
       </form> 
