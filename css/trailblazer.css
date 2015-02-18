@@ -77,13 +77,13 @@ body {
 
 .bold-statement {
     font-size: 3.2rem;
-    line-height: 1.2;
+    line-height: 1.2em;
     text-align: center;
     max-width: 14em;
 }
 
 .lead-statement {
-    line-height: 1.35;
+    line-height: 1.35em;
     letter-spacing: .1rem;
     max-width: 32em;
 }
@@ -162,6 +162,14 @@ body {
         margin-left: 1em;
         margin-right: 1em;
     }
+}
+
+/* Overriding skeleton button style */
+.button{
+    background-color: rgba(255, 255, 255, 0.6);
+}
+.button:hover{
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
 .button-primary.button-education {
@@ -422,7 +430,7 @@ header {
 
 .form-wrapper .lead-statement {
     font-size: 2.4rem;
-    margin-bottom: 0.8rem;
+    margin-bottom: 1.6rem;
 }
 
 .form-wrapper .lead-statement,
