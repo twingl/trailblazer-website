@@ -568,4 +568,25 @@ footer, .vision {
 
 .u-center {
     text-align: center;
-}`
+}
+
+
+/* Webstock 
+--------------------------------------------*/
+.webstock-announcement {
+    background-color: #b07f00;
+    color: #f6f2ec;
+    padding-top: 2rem;
+}
+
+.cta.webstock input[type=submit]{
+    color: #FFFAF3;
+    background-color: #b07f00;
+    border-color: #b07f00;
+    text-shadow: 0 1px 1px rgba(140, 140, 140, 0.5)
+}
+
+
+.webstock-announcement a, .webstock-announcement a:hover {
+    color:#fff;
+}
