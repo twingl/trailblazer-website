@@ -58,13 +58,18 @@
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <!-- Navigation -->
+  <div class="row  webstock-announcement">
+    <div class="container">
+      <p  class="u-center">Hello, you lovely Webstock people! <a class="scroll-to-cta" href="#sign-up">Join the beta</a> or <a href="https://twitter.com/TrailblazerApp">follow along on Twitter</a></p>
+    </div>
+  </div>
   <header>
     <div class="container">
       <div class="row">
         <div class="four columns" >
           <ul class="nav-list  contact-nav">
             <li><a class="icon facebook" href="https://www.facebook.com/LetsBlazeTrails">Trailblazer on Facebook</a></li>
-            <li><a class="icon twitter" href="https://twitter.com/TrailblazerApp">Trailblazer on Twitter</a></li>
+            <li><a class="icon twittrer" href="https://twitter.com/TrailblazerApp">Trailblazer on Twitter</a></li>
             <li><a class="icon email" href="mailto:hello@trailblazer.io">Email Us</a></li>
           </ul>
         </div>
@@ -84,9 +89,7 @@
     <div class="container">
       <div class="row">
         <h1 class="logo"><img src="/images/logo@2x.png" width="250px" alt="Trailblazer"><span class="u-hide">Trailblazer</span></h1>
-        <p class="bold-statement  intro"><span class="u-kern-tr-verlag">T</span>railblazer maps out your journey across the web so you never get lost.</p>
-        <p class="bold-statement  webstock">Coming to you first, Webstock. Check back soon!</p>
-
+        <p class="bold-statement  intro"><span class="u-kern-tr-verlag">T</span>railblazer maps out your journey across the web so you never get lost. <br> <a class="scroll-to-cta" href="#sign-up">Join the Webstock Preview.</a></p>
       </div>
       <div class="row">
         <div class="problem-browser  ten columns  offset-by-one">
@@ -111,21 +114,25 @@
 </section>
   
   
-  <section class="cta" id="sign-up"><!-- .form-success and .form-error states go here -->
+  <section class="cta  webstock" id="sign-up"><!-- .form-success and .form-error states go here -->
     <div class="container">
+      <div class="ten columns  offset-by-one"><p class="bold-statement">Greetings, Webstockians!</p>
+            <p>You get to be the first to come in to Trailblazer and kick the tires. Just drop your email in below: you’ll get an installation link sent to you. </p>
+            <p>If you come and find us, we’ll even throw in a sticker for free!</p>
+            <a class="button" href="http://hive.twin.gl/">See the Trails people have made so far</a></div>
       <form class="row" id="registration-form" action="http://beta.trailblazer.io/subscribe" method="POST">
         <div class="form-wrapper  signup  ten columns  offset-by-one">
           <input type="email" value="" name="EMAIL" id="email" class="required email" placeholder="Place thy email here, friend!">
-          <input type="submit" value="Join the beta." name="subscribe" id="subscribe" class="button button-primary">
+          <input type="submit" value="Let’s do this!" name="subscribe" id="subscribe" class="button button-primary">
           <p class="form-error-text u-cf"><strong>Phrasing!</strong> We couldn’t process that email. Did you mistype it, perchance?</p>
         </div>
       
         <div class="form-wrapper  post-signup  ten columns  offset-by-one">
-          <p class="lead-statement">Splendid! You’re one of <strong id="queue-length">399</strong> in the queue! Check your email.</p>
-          <p class="less-leading-statement"><strong>By the way:</strong> how beta do you like your software? (Optional)</p>
-          <button name="jank-spiciness" value="hot" id="jank-tolerance-hot">In the danger zone.</button>
-          <button name="jank-spiciness" value="medium" id="jank-tolerance-medium">I can take a bit of jank.</button>
-          <button name="jank-spiciness" value="mild" id="jank-tolerance-mild">90% of the time, it works every time.</button>
+          <p class="lead-statement">Splendid! We have emailed you a link to install Trailblazer. Open it on a device that has Google Chrome installed and follow the instructions. </p>
+          <p class="less-leading-statement"><a class="button" href="http://blog.twin.gl/">check out our blog</a> &nbsp; or tell your friends <span class="twitter-share"><a class="twitter-share-button"
+            href="https://twitter.com/share"  data-text="Just signed up for Trailblazer. It maps out your journey across the web—no more tab overload!" data-size="large">
+          Tweet
+          </a></span></p>
         </div>
         <div class="form-wrapper  post-post-signup  ten columns  offset-by-one">
           <p class="lead-statement">Alright, got it! That’s us done here.</p>
