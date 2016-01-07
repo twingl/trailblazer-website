@@ -328,24 +328,24 @@ header {
     padding-top: 1em;
 }
 
-.cta input[type="email"] {
+#registration-form input[type="email"] {
     height: 64px;
     width: 100%;
 }
 
-.cta input[type="submit"] {
+#registration-form input[type="submit"] {
     height: 64px;
     line-height: 64px;
     width: 100%;
 }
 
-.cta input {
+#registration-form input {
     font-size: 1.5rem;
     float: left;
 }
 
 @media (min-width: 768px) {
-    .cta input[type="email"] {
+    #registration-form input[type="email"] {
         height: 76px;
         padding: 12px 20px; /* The 6px vertically centers text on FF, ignored by Webkit */
         width: 60%;
@@ -354,7 +354,7 @@ header {
         border-right: 0;
     }
 
-    .cta input[type="submit"] {
+    #registration-form input[type="submit"] {
         height: 76px;
         line-height: 76px;
         width: 40%;
@@ -368,7 +368,7 @@ header {
 #registration-form {
     margin-bottom: 0;
 }
-.cta .button-primary {
+#registration-form .button-primary {
     font-family: 'Verlag A', 'Verlag B';
     text-transform: none;
     font-size: 1.4em; /*Compensates for Gotham's higher x-height*/
@@ -590,3 +590,45 @@ footer, .vision {
 .webstock-announcement a, .webstock-announcement a:hover {
     color:#fff;
 }
+
+
+.hero-image {
+    display: block;
+    padding-bottom: 4em;
+}
+
+
+.mc-field-group.input-group strong, label[for='mce-EMAIL'] {
+    font-size: 1.2em;
+}
+
+.mc-field-group.input-group li {
+    display: block;
+    list-style: none;
+}
+
+.mc-field-group.input-group li input, .mc-field-group.input-group li label {
+    display: inline-block;
+    margin-right: 1em;
+}
+
+.indicates-required {display:none;}
+
+input#mce-EMAIL {
+    height: 72px;
+    padding: 24px;
+    width: 480px;
+    margin-bottom: 2em;
+}
+
+input#mc-embedded-subscribe {
+        height: 76px;
+        line-height: 76px;
+        width: 40%;
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 0;
+        border-left: 0;
+        font-family: 'Verlag A', 'Verlag B';
+        text-transform: none;
+        font-size: 1.4em;
+    }       
