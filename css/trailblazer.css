@@ -19,11 +19,11 @@ body {
 }
 
 a {
-  color: #F6643F; 
+  color: #F6643F;
 }
 
 a:hover {
-  color: #FF3C0A; 
+  color: #FF3C0A;
 }
 
 
@@ -42,7 +42,7 @@ a[href="/about/"], a[href="/about"]  {
 @media (min-width: 500px) {
     div .problem-browser {
         padding-top: 12rem;
-    }    
+    }
 }
 
 
@@ -295,7 +295,7 @@ header {
         width: 44%;
         vertical-align: top;
         margin-right: 5.5%;
-    }    
+    }
 }
 
 
@@ -361,7 +361,7 @@ header {
         border-bottom-left-radius: 0;
         border-top-left-radius: 0;
         border-left: 0 ;
-    }   
+    }
 }
 
 /* CTA Form Styling */
@@ -404,10 +404,10 @@ header {
     border-color: red;
 }
 
-/* Success - BEGIN PHASE TWO */ 
+/* Success - BEGIN PHASE TWO */
 
 .cta.form-success, .cta.form-great-success {
-    background-color: #84EE78; 
+    background-color: #84EE78;
 }
 
 .cta.form-success .signup, .cta.form-great-success .signup {display: none}
@@ -514,7 +514,7 @@ footer, .vision {
 @media (min-width: 550px) {
     .footer-nav-right {
         text-align: right;
-    }    
+    }
 }
 
 /* Twingl */
@@ -571,7 +571,7 @@ footer, .vision {
 }
 
 
-/* Webstock 
+/* Webstock
 --------------------------------------------*/
 .webstock-announcement {
     background-color: #b07f00;
@@ -631,4 +631,18 @@ input#mc-embedded-subscribe {
         font-family: 'Verlag A', 'Verlag B';
         text-transform: none;
         font-size: 1.4em;
-    }       
+    }
+
+
+/* For Students
+    --------------------------------------------*/
+
+.feature-icon-box {
+  height: 75px;
+}
+
+.feature-icon {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
