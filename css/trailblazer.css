@@ -163,6 +163,16 @@ body {
     }
 }
 
+.button-primary.button-students {
+    background-color: #DD2C4D;
+    border-color: #DD2C4D;
+}
+
+.button-primary.button-students:hover {
+    background-color: #DB5E75;
+    border-color: #DB5E75;
+}
+
 .button-primary.button-education {
     background-color: #1DAFAD;
     border-color: #1DAFAD;
