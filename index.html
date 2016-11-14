@@ -44,12 +44,16 @@
   window.twttr=(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],t=window.twttr||{};if(d.getElementById(id))return;js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);t._e=[];t.ready=function(f){t._e.push(f);};return t;}(document,"script","twitter-wjs"));
   </script>
 
+  <!-- For Google Store Inline Installation
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/oaemjkmooakhgdcakeppfimobdaanfpj">
+
   <!-- Form handlers
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <script src="/script/lib/element.classList.shim.js" type="text/javascript" charset="utf-8"></script>
+  <!-- <script src="/script/lib/element.classList.shim.js" type="text/javascript" charset="utf-8"></script>
   <script src="/script/lib/domready.js" type="text/javascript" charset="utf-8"></script>
   <script src="/script/lib/superagent.js" type="text/javascript" charset="utf-8"></script>
-  <script src="/script/form.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/script/form.js" type="text/javascript" charset="utf-8"></script> -->
 
 </head>
 <body>
@@ -83,7 +87,7 @@
     <div class="container">
       <div class="row">
         <h1 class="logo"><img src="images/logo@2x.png" width="250px" alt="Trailblazer"><span class="u-hide">Trailblazer</span></h1>
-        <p class="bold-statement  intro"><span class="u-kern-tr-verlag">T</span>railblazer maps out your journey across the web so you never get lost. <br> <a class="scroll-to-cta" href="#sign-up">Sign up for the beta.</a></p>
+        <p class="bold-statement  intro"><span class="u-kern-tr-verlag">T</span>railblazer maps out your journey across the web so you never get lost. <br> <a class="scroll-to-cta" href="#install">Install the beta.</a></p>
 
       </div>
       <div class="row">
@@ -94,7 +98,7 @@
       </div>
       <div class="row  solution-wrapper">
         <div class="solution  ten columns  offset-by-one">
-          <p class="lead-statement">Trailblazer is an addon for Google Chrome which turns your hundreds of tabs into a glanceable, shareable map. <a class="scroll-to-cta" href="#sign-up">Sign up for the beta.</a></p>
+          <p class="lead-statement">Trailblazer is an addon for Google Chrome which turns your hundreds of tabs into a glanceable, shareable map. <a class="scroll-to-cta" href="#install">Install the beta.</a></p>
 
           <div class="solution-image-wrapper"><img class="trailblazer-screenshot" src="images/solution.png" alt="A screenshot of Trailblazer, a spiderweb like map of your web travels."></div>
           <ol class="value-proposition">
@@ -106,37 +110,35 @@
         </div>
       </div>
     </div>
-</section>
+  </section>
 
 
-  <section class="cta" id="sign-up"><!-- .form-success and .form-error states go here -->
+  <section class="cta" id="install">
     <div class="container">
-      <form class="row" id="registration-form" action="http://beta.trailblazer.io/subscribe" method="POST">
-        <div class="form-wrapper  signup  ten columns  offset-by-one">
-          <input type="email" value="" name="EMAIL" id="email" class="required email" placeholder="Place thy email here, friend!">
-          <input type="submit" value="Join the beta." name="subscribe" id="subscribe" class="button button-primary">
-          <p class="form-error-text u-cf"><strong>Phrasing!</strong> We couldn’t process that email. Did you mistype it, perchance?</p>
-        </div>
+      <div class="form-wrapper  signup  ten columns  offset-by-one">
 
-        <div class="form-wrapper  post-signup  ten columns  offset-by-one">
-          <p class="lead-statement">Splendid! You’re one of <strong id="queue-length">399</strong> in the queue! Check your email.</p>
-          <p class="less-leading-statement"><strong>By the way:</strong> how beta do you like your software? (Optional)</p>
-          <button name="jank-spiciness" value="hot" id="jank-tolerance-hot">In the danger zone.</button>
-          <button name="jank-spiciness" value="medium" id="jank-tolerance-medium">I can take a bit of jank.</button>
-          <button name="jank-spiciness" value="mild" id="jank-tolerance-mild">90% of the time, it works every time.</button>
-        </div>
-        <div class="form-wrapper  post-post-signup  ten columns  offset-by-one">
-          <p class="lead-statement">Alright, got it! That’s us done here.</p>
-          <p class="less-leading-statement">Expect to get an email in the near future. We can’t wait to have you! <br></p>
-          <p class="less-leading-statement"><a class="button" href="https://blog.trailblazer.io/">check out our blog</a> &nbsp; or tell your friends <span class="twitter-share"><a class="twitter-share-button"
-            href="https://twitter.com/share"  data-text="Just signed up for @TrailblazerApp. It maps out your journey across the web—no more tab overload!" data-size="large">
-          Tweet
-          </a></span></p>
+        <button onclick="chrome.webstore.install()" id="install-button" class="button button-primary">Add Trailblazer to Chrome</button>
 
-        </div>
-      </form>
+        <p id="already-installed" class="form-success-text"><strong>Extension Installed!</strong> Why, it appears that you already have Trailblazer installed. Tap on the Trailblazer icon in the top-right corner of your browser to get started.</p>
 
+        <p id="not-chrome" class="form-error-text"><strong>Google Chrome Required.</strong> Currently Trailblazer only runs on Chrome. But if you're interested in porting Trailblazer to another browser, please do join our <a href="https://trailblazing.community/">open-source community</a>.</p>
 
+        <!-- Forgive me -->
+        <script>
+          var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+
+          if (isChrome && chrome.app.isInstalled){
+              document.getElementById('already-installed').style.display = 'block';
+          }
+          else if (isChrome && !chrome.app.isInstalled) {
+              document.getElementById('install-button').style.display = 'block';
+          }
+          else {
+              document.getElementById('not-chrome').style.display = 'block';
+          }
+        </script>
+
+      </div>
     </div>
 
   </section>

@@ -338,6 +338,13 @@ header {
     padding-top: 1em;
 }
 
+#install-button {
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
 #registration-form input[type="email"] {
     height: 64px;
     width: 100%;
@@ -415,6 +422,16 @@ header {
 }
 
 /* Success - BEGIN PHASE TWO */
+
+.form-success-text {
+    display: none;
+    padding: 2rem;
+    color: #70E164;
+    border: 2px solid #70E164;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
 
 .cta.form-success, .cta.form-great-success {
     background-color: #84EE78;
